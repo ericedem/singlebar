@@ -9,7 +9,7 @@ with open('LICENSE') as f:
 
 setup(
     name='singlebar',
-    version='0.0.1',
+    version='0.0.2',
     description='Single update progress bar',
     long_description=readme,
     author='Eric Edem',
