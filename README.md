@@ -1,5 +1,7 @@
 # singlebar
-Progressbar that increments one item at a time
+Progressbar that increments one item at a time.
+
+To use, put this in your requirements.txt `git+ssh://github.com/ericedem/singlebar#egg=singlebar`
 
 Example Code:
 
