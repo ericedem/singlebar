@@ -1,11 +1,11 @@
-from context import bar
+from context import singlebar
 from time import sleep
 
 n = 100
-bar.start(n)
+singlebar.start(n)
 
 for i in range(n):
-    bar.update()
+    singlebar.update()
     sleep(.1)
 
-bar.finish()
+singlebar.finish()

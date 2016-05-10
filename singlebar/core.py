@@ -1,4 +1,3 @@
-__author__ = 'ericedem'
 
 # singleton for managing this silly progress bar
 import progressbar
@@ -25,3 +24,5 @@ def update():
 
 def finish():
     bar.finish()
+
+__author__ = 'ericedem'
