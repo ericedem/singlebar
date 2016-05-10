@@ -6,7 +6,7 @@ To use, put this in your requirements.txt `git+ssh://github.com/ericedem/singleb
 Example Code:
 
 ```
-from context import bar
+import singlebar as bar
 from time import sleep
 
 n = 100
