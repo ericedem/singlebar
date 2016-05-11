@@ -1,4 +1,4 @@
-from context import singlebar
+from .context import singlebar
 from time import sleep
 
 n = 100
