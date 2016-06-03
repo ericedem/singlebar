@@ -16,5 +16,6 @@ setup(
     author_email='ericedem@gmail.com',
     url='https://github.com/ericedem/singlebar',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=('tests', 'docs')),
+    install_requires=['progressbar']
 )
