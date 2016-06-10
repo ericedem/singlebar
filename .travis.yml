@@ -1,8 +1,14 @@
 language: python
 python:
-  - "2.6"
-  - "2.7"
-# command to install dependencies
+- '2.6'
+- '2.7'
 install: make init
-# command to run tests
 script: make test
+env:
+  global:
+    secure: bG+46xvjYDqItYKQlD48Ph+/safKC5vWMzcs9g4eNBtV30Gv5IRGTxKs4O/HyhXOcRJa2HBL+fA/+HLPfSTgKQaUDmO+MqaG/8M8/LPGA+1MabKBAa10DcHoZVpqBdDryNZj8t245VIZViskCMezxyHQDCeKxZ4RmJtXLDfgZ/gQ8f2irxggok3DFMK6+lNjKEvGJWwSL4zN4dU3TKMLGFBzHyOhec6wqQ6sYRxoQlTWfO1qWpUdoBg4vQ4EBmCZV1m1Mefmb3NLLHs6s0fsIUYGY64AIiDR/T4b8kzKVVtafcBtst4KjRBfKjZ5LLb6n/DeF5FnJFJbsAGgWU/rcJUC6+AYGzKk5qwGYB1PI1UZxuS6O8mXvQEjh5siKtLGgOjjqmMERB6xo8yJWWnkt3xFoeTuDoxtQt/1wvDPdQ6ccxK6C9aGu8R80raBH3ytGFdMdOfe6d2oAqUdAjtKdaLvGZApJOe9MMPlFkJ6z8JOXoEXc653hMQaQAMKE4P7688VZDlj18+K5SumNITKj+oAxpOTy17gcnDrlM4SuQL82W4N0wq3qzCQDC6ztvTp8nbfS/5q6mEE0t/qM9wjn4ZpiD6b2aCiySiQwA1VZID2Fp0zBiFiFvNb9v7HCObp06XJGFWN5wGFHV6bxiRYvpuiN5NCM51fqnqIDSnBy+4=
+
+deploy:
+  skip_cleanup: true
+  tags: true
+  script: scripts/deploy.sh
