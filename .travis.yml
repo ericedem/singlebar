@@ -10,7 +10,7 @@ env:
 
 deploy:
   skip_cleanup: true
-  tags: true
   script: scripts/deploy.sh
   on:
-    branch: master
+    tags: true
+    all_branches: true
